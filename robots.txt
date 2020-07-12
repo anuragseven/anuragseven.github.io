@@ -1,5 +1,7 @@
 # robotstxt.org/
 
+Sitemap: https://anuragseven.github.io/sitemap.xml
+
 User-agent: *
 
 Disallow: /about/
