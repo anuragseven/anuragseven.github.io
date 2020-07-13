@@ -4,6 +4,11 @@ Sitemap: https://anuragseven.github.io/sitemap.xml
 
 User-agent: *
 
-Disallow: /about/
+
 Disallow: /contact/
 Disallow: /feed.xml
+Disallow: /tags/
+Noindex: /contact/
+Noindex: /feed.xml
+Noindex: /tags/
+
