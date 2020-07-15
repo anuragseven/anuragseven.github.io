@@ -6,9 +6,7 @@ User-agent: *
 
 
 Disallow: /contact/
-Disallow: /feed.xml
 Disallow: /tags/
 Noindex: /contact/
-Noindex: /feed.xml
 Noindex: /tags/
 
