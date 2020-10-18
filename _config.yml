@@ -3,20 +3,16 @@ name: Anurag Tripathi
 title: Anurag Tripathi | Personal Blog 
 description: Welcome to this blog , here , I write about Flutter , Dart , Algorithms , Data Structures and other technologies. I aslo write about self improvement , health and fitness. 
 tags:
-  - basic flutter app
-  - flutter
-  - flutter language
-  - flutter tutorial
-  - flutter app
-  - flutter projects
-  - dart language
-  - self improvement
-  - health
-  - fitness
+  - Anurag Tripathi
+  - anuragseven.github.io
+  - anuragseven
+  
 show_hero: true
 menu:
   - title: Home
     url: /
+  - title: Projects
+    url: /some-cool-projects-i-have-done
   - title: About
     url: /about
   - title: Contact
