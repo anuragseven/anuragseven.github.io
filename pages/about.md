@@ -19,12 +19,6 @@ I first interacted with `Flutter` in december 2019 and quickly fell in love with
 Year 2020 has been good for me as I picked good habits like exercising , eating right , reading and writing along with my college studies and
 teaching myself flutter and other tech skills .  I am an enthusiastic freelancer and looking forward to working on some exciting projects .  
 
-# Contribute :
-
-Liked this site ? You can help it grow by financially supporting it :
-
-
-<a href="https://www.buymeacoffee.com/anuragt" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 
 
