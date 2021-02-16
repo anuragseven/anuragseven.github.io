@@ -23,7 +23,7 @@ tags:
   - Face Recognisation Python Project
   - Talking Calculator
   - Winform Voice Calculator
-author: Anurag Tripathi
+author: AnuragTripathi
 paginate: false
 ---
 

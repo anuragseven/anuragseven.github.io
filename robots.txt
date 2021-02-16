@@ -1,6 +1,6 @@
 # robotstxt.org/
 
-Sitemap: https://anuragseven.github.io/sitemap.xml
+Sitemap: https://datahunk.dev/sitemap.xml
 
 User-agent: *
 

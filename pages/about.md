@@ -21,24 +21,10 @@ teaching myself flutter and other tech skills .  I am an enthusiastic freelancer
 
 # Contribute :
 
-
-
 Liked this site ? You can help it grow by financially supporting it :
 
 
-<a href="https://www.upwork.com/o/profiles/users/~01043c498aacc7d963/" title="Support this website" >
-          <img 
-    src="/assets/img/paypalWide.svg"
-    height="100"
-    width="100" />
-</a>
+<a href="https://www.buymeacoffee.com/anuragt" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-Hire me as a freelancer for your performance critical project : 
 
-<a href="https://www.upwork.com/o/profiles/users/~01043c498aacc7d963/" title ="Hire Anurag on Upwork" >
-          <img 
-    src="/assets/img/upwork.svg"
-    height="100"
-    width="100" />
-</a>
 

@@ -34,8 +34,10 @@
                 {% include pagination-post.html %}
             </article>
 
-            {% if site.two_columns_layout %}
+            {% if site.two_columns_layout %}	
                 <aside class="see-also">
+                    <h2>{{ site.translations.text.see_also | default: "Support Me" }}</h2>
+                    <a href="https://www.buymeacoffee.com/anuragt" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
                     <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
                     <ul>
                         {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
@@ -57,6 +59,7 @@
                     </ul>
                 </aside>
             {% endif %}
+            
 
         </section>
 
