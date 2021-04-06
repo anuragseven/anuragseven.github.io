@@ -81,7 +81,7 @@ sys.exit(app.exec_())
 ```
 Run the file ,  you must see a  text box , a **Start Listening** button and a **Dictate Text** button.
 
-<img src="/assets/img/posts/ui.png" alt="user interface" width="317" height="257">
+<img src="https://user-images.githubusercontent.com/51025361/113690817-733f3280-96e9-11eb-8767-3e8047a7abe4.PNG" alt="user interface" width="317" height="257">
 
 For now leave it as it is.
 # Writing code for speech to text:
