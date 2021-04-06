@@ -16,6 +16,7 @@ tags:
   - Azure text to speech PyQt5
   - Azure speech to text in PyQt5 with multithreading
   - Python PyQt5 Azure Speech to text 
+  - PyQt5 Azure Speech to text
   
 author: AnuragTripathi
 paginate: false
