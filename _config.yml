@@ -20,8 +20,6 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Support Me
-    url: 
   - title: Feed
     url: /feed.xml
 email: anuragt401@gmail.com
@@ -30,7 +28,7 @@ email: anuragt401@gmail.com
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: anuragseven
-twitter_username: anurag________
+
 
 
 
