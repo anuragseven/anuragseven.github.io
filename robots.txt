@@ -7,6 +7,10 @@ User-agent: *
 
 Disallow: /contact/
 Disallow: /tags/
+Disallow: /404.html/
+Disallow: /assets/
 Noindex: /contact/
 Noindex: /tags/
+Noindex: /404.html/
+Noindex: /assets/
 
