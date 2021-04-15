@@ -22,8 +22,7 @@ author: AnuragTripathi
 paginate: false
 ---
 
-               
-# Outline:
+
 
 <a href="/using-azure-speech-in-a-pyqt5-app/#introduction">**1. Introduction**</a>                               
 <a href="/using-azure-speech-in-a-pyqt5-app/#set-up-your-environment">**2. Set up your environment**</a>                                              
