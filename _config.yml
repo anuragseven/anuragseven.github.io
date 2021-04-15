@@ -1,37 +1,43 @@
 # Site Settings
 name: Data Hunk
 title: Data Hunk
-description: Welcome to this blog , here , I write about Data Science , Flutter , Dart , Algorithms , Data Structures and other technologies. I aslo write about self improvement , health and fitness. 
+description: Welcome to this blog , here , I write about Data Science , Flutter , Dart , Algorithms , Data Structures and other technologies. 
+  I aslo write about self improvement , health and fitness.
+  
 tags:
   - datahunk.dev
   - Data Hunk
   - Anurag Tripathi
   - anuragseven.github.io
   - anuragseven
-
-  
 show_hero: true
 menu:
   - title: Home
     url: /
-  - title: Projects
-    url: /some-cool-projects-i-have-done
   - title: About
     url: /about
+  - title: Projects
+    url: /some-cool-projects-i-have-done
   - title: Contact
     url: /contact
   - title: Feed
     url: /feed.xml
-email: anuragt401@gmail.com
+email: datahunkdev@gmail.com
+# See: https://disqus.com/
+disqus_username: 
+# Contact Form Setting
+# See: https://formspree.io/
+formspree_form_id: formspree_form_id
 
 
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: anuragseven
-
-
-
-
+facebook_username: 
+twitter_username: 
+instagram_username: 
+linkedin_username: 
+medium_username: 
 
 
 # Posts Settings
@@ -43,7 +49,7 @@ two_columns_layout: true
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://datahunk.dev" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 google_analytics: "UA-172410706-1"
 language: "en"
 categories_folder: category
@@ -102,4 +108,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.0
+version: 

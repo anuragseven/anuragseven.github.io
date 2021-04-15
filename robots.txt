@@ -1,18 +1,3 @@
 # robotstxt.org/
 
-Sitemap: https://datahunk.dev/sitemap.xml
-
 User-agent: *
-
-
-Disallow: /contact/
-Disallow: /tags/
-Disallow: /404.html/
-Disallow: /assets/
-Disallow: /admin/
-Noindex: /contact/
-Noindex: /tags/
-Noindex: /404.html/
-Noindex: /assets/
-Noindex: /admin/
-
