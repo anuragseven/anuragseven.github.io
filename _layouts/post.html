@@ -36,6 +36,8 @@
 
             {% if site.two_columns_layout %}
                 <aside class="see-also">
+                    <h2>{{ site.translations.text.see_also | default: "Support Me" }}</h2>
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="anuragt" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
                     <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
                     <ul>
                         {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
@@ -78,6 +80,7 @@
 
         {% include subscription.html %}
         {% include share.html %}
+        {% include support.html %}
         {% include author.html %}
         {% include comments.html %}
         {% include footer.html %}
