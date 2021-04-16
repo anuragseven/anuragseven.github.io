@@ -17,4 +17,12 @@ tags:
 author: AnuragTripathi
 paginate: false
 ---
-
+# Outline:
+<a href="/using-azure-speech-in-a-pyqt5-app/#introduction">**1. Introduction**</a>                               
+<a href="/using-azure-speech-in-a-pyqt5-app/#set-up-your-environment">**2. Set up your environment**</a>                                              
+<a href="/using-azure-speech-in-a-pyqt5-app/#creating-a-minimalistic-user-interface">**3. Creating a minimalistic User Interface**</a>                                 
+<a href="/using-azure-speech-in-a-pyqt5-app/#writing-code-for-speech-to-text">**4. Writing code for speech to text**</a>                              
+<a href="/using-azure-speech-in-a-pyqt5-app/#using-qthreadpool-and-qrunnable-to-prevent-gui-freezing">**5. Using QThreadPool and QRunnable to prevent GUI freezing**</a>                                         
+<a href="/using-azure-speech-in-a-pyqt5-app/#writing-code-for-text-to-speech">**6. Writing code for text to speech**</a>                                
+<a href="/using-azure-speech-in-a-pyqt5-app/#making-final-connections">**7. Making final connections**</a>                                  
+<a href="/using-azure-speech-in-a-pyqt5-app/#conclusion">**8. Conclusion**</a>
