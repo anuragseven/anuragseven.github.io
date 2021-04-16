@@ -3,11 +3,12 @@ date: 2021-04-16 05:20:41
 layout: post
 title: "How to use Azure Speech Services with PyQt5"
 subtitle: We will build a simple PyQt5 app which uses Azure Speech Services. We will unerstand how to add azure speech to text and text to speech in PyQt5 a app, use multithreading to prevent GUI freezing and more. 
-description: We will build a simple PyQt5 app which uses Azure Speech Services. We will unerstand how to add azure speech to text and text to speech in PyQt5 a app, use multithreading to prevent GUI freezing and more. 
-image: https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80
+description: We will build a simple PyQt5 app which uses Azure Speech Services. We will unerstand how to add azure speech to text and text to speech in PyQt5 a app, use multithreading to prevent GUI freezing and more.    
+image:  >-
+  https://images.unsplash.com/photo-1495819903255-00fdfa38a8de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=927&q=80
 optimized_image:
 category:  Python Programming
-tags:
+tags:  
   - Azure PyQt5 
   - Azure Speech to text PyQt5
   - Azure text to speech PyQt5
@@ -17,6 +18,8 @@ tags:
 author: AnuragTripathi
 paginate: false
 ---
+
+
 # Outline
 <a href="/using-azure-speech-in-a-pyqt5-app/#introduction">**1. Introduction**</a>                               
 <a href="/using-azure-speech-in-a-pyqt5-app/#set-up-your-environment">**2. Set up your environment**</a>                                              
@@ -356,3 +359,7 @@ Great!  We are done . Run the **ui.py** to see everything is working as expected
 # Conclusion:
 We created a simple **PyQt5** app , learned how to add **Azure** speech services in it , prevented GUI freezing using multithreading and finally made the connections necessary for everything to work . Great job! 
 If you want complete code  visit <a href="https://github.com/anuragseven/azurespeech-pyqt5">this github repo</a> and don't forget to give it a like . Thank You for reading this article .
+
+
+
+
