@@ -21,7 +21,7 @@ paginate: false
 
 
 # Outline
-<a href="https://www.amazon.in/gp/product/B07HGH8D2R/ref=as_li_tl?ie=UTF8&tag=datahunkdev-21&camp=3638&creative=24630&linkCode=as2&creativeASIN=B07HGH8D2R&linkId=3e59f1f0c19f78fbf5688142a7148d6c">**1. Introduction**</a>                               
+<a href="/making-an-azure-pyqt5-app/#introduction">**1. Introduction**</a>                               
 <a href="/making-an-azure-pyqt5-app/#set-up-your-environment">**2. Set up your environment**</a>                                              
 <a href="/making-an-azure-pyqt5-app/#creating-a-minimalistic-user-interface">**3. Creating a minimalistic User Interface**</a>                                 
 <a href="/making-an-azure-pyqt5-app/#writing-code-for-speech-to-text">**4. Writing code for speech to text**</a>                              
