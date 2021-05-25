@@ -30,7 +30,7 @@ paginate: false
 
 # Introduction:
 
-Since I began programming I have built some really cool applications .The very first software I built was **“ Talking Calculator “** . It was built  using the  .net framework  and runs as a windows desktop application .Building It was both joy and pain. But It taught me some valuable things like **REST APIs** , how a **UI program** works , **asynchronous programming** , **databases** etc .  Since then I have coded nearly half a dozen apps  and never looked back .  Some were simple and some drove me crazy . I also didn’t constraint myself to a single platform , I built a command line app , Two desktop apps and two mobile apps and now these days I am working on a web application. Anyway let's get started , I am going to describe these projects in order :
+Since I began programming I have built some really cool applications .The very first software I built was **“ Talking Calculator “** . It was built  using the  .net framework  and runs as a windows desktop application .Building It was both joy and pain. But It taught me some valuable things like **REST APIs** , how a **UI program** works , **asynchronous programming** , **databases** etc .  Since then I have coded nearly half a dozen apps  and never looked back .  Some were simple and some drove me crazy . I also didn’t constraint myself to a single platform , I built a command line app , Two desktop apps and two mobile apps and now these days I am working on a web application. Anyway let's get started .
 
 # Virtual-Scribe
 
