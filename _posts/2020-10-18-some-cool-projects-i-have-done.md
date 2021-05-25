@@ -32,9 +32,9 @@ paginate: false
 
 Since I began programming I have built some really cool applications .The very first software I built was **“ Talking Calculator “** . It was built  using the  .net framework  and runs as a windows desktop application .Building It was both joy and pain. But It taught me some valuable things like **REST APIs** , how a **UI program** works , **asynchronous programming** , **databases** etc .  Since then I have coded nearly half a dozen apps  and never looked back .  Some were simple and some drove me crazy . I also didn’t constraint myself to a single platform , I built a command line app , Two desktop apps and two mobile apps and now these days I am working on a web application. Anyway let's get started , I am going to describe these projects in order :
 
-#Virtual-Scribe
+# Virtual-Scribe
 
-Virtual Scribe is a research-based project which allows visually impaired students to write examinations without the need of a scribe. It is completely voice-controlled and allows writing, drawing figures, and performing calculations.  We have developed a prototype of it in **PyQt5** and still working to make it industry-ready. Recently **Virtual-Scribe** won first prize in a Hackathon conducted by I-STEM(https://www.inclusivestem.org/) .  You can watch a demo video of it  we presented in the Hackathon:
+Virtual Scribe is a research-based project which allows visually impaired students to write examinations without the need of a scribe. It is completely voice-controlled and allows writing, drawing figures, and performing calculations.  We have developed a prototype of it in **PyQt5** and still working to make it industry-ready. Recently **Virtual-Scribe** won first prize in a Hackathon conducted by <a href="https://www.inclusivestem.org/">I-STEM</a>.  You can watch a demo video of it  we presented in the Hackathon:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_CYmUVxkaSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
