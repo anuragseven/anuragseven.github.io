@@ -7,7 +7,7 @@ position: owner
 bio: Developer , I write about tech , self improvement and health. Check <a href="/about/">About</a>
 github_username: anuragseven
 twitter_username: 
-linkedin_username: anuragtseven
+linkedin_username: anuragtripathi7
 
 ---
 
