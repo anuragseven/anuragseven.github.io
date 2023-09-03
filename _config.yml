@@ -1,15 +1,14 @@
 # Site Settings
-name: Data Hunk
-title: Data Hunk
-description: Welcome to this blog , here , I write about Data Science , Flutter , Dart , Algorithms , Data Structures and other technologies. 
-  I aslo write about self improvement , health and fitness.
+name: Anurag Tripathi
+title: Anurag Tripathi
+description: Hello and Welcome ! Here I write all about Software Engineering , Data Science , Algorithms and host of other things . Check About to know more.
   
 tags:
-  - datahunk.dev
-  - Data Hunk
   - Anurag Tripathi
+  - anuragtripathi.com
   - anuragseven.github.io
   - anuragseven
+  - anuragtripathi7
 show_hero: true
 menu:
   - title: Home
@@ -22,12 +21,12 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: datahunkdev@gmail.com
+email: anuragt401@outlook.com
 # See: https://disqus.com/
 disqus_username: 
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: xwkapkya
+formspree_form_id: mknlbbgl
 
 
 # Social Media Settings
@@ -49,7 +48,7 @@ two_columns_layout: true
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://datahunk.dev" # the base hostname & protocol for your site
+url: "https://anuragtripathi.com" # the base hostname & protocol for your site
 google_analytics: "UA-172410706-1"
 language: "en"
 categories_folder: category

@@ -14,5 +14,4 @@ I am a data science enthuasist currently in final year of my 4 year Computer Sci
 I have also worked in mobile app development using **flutter** framework, 
  desktop app development using **.NET framework** , console apps in **Python** , **C#**, **Java** and **C++** . 
 For More Details Please Visit "Projects" section in Menu. I am looking
-forward to work on some exciting projects. Want to contact me ? Just Send me a mail : **datahunkdev@gmail.com** .
-Alternatively Visit "Contact" in Menu. Thanks !
+forward to work on some exciting projects. Want to connect ? Send me a <a href="/contact">Message.</a> Thanks !
