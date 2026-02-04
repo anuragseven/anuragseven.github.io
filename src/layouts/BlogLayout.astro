@@ -1,0 +1,229 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  date: Date;
+  category: string;
+}
+
+const { title, date, category } = Astro.props;
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }).format(date);
+};
+---
+
+<BaseLayout title={title} description={title}>
+  <article class="container mx-auto px-4 py-16 max-w-3xl">
+    <header class="mb-12">
+      <div class="flex items-center gap-3 mb-4 text-sm text-[var(--text-muted)]">
+        <a href="/blog" class="hover:text-[var(--accent)] transition-colors">&larr; Back to Blog</a>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">{title}</h1>
+
+      <div class="flex items-center gap-3 text-sm text-[var(--text-muted)]">
+        <span class="px-3 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] font-medium">
+          {category}
+        </span>
+        <span>{formatDate(date)}</span>
+      </div>
+    </header>
+
+    <div class="blog-content">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style is:global>
+  .blog-content {
+    line-height: 1.8;
+    font-size: 1.125rem;
+  }
+
+  /* Headings - Large & Bold */
+  .blog-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    letter-spacing: -0.025em;
+  }
+
+  .blog-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .blog-content h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+  }
+
+  /* Paragraphs - Generous spacing */
+  .blog-content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+  }
+
+  /* Links */
+  .blog-content a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.2s;
+  }
+
+  .blog-content a:hover {
+    opacity: 0.8;
+  }
+
+  /* Strong/Bold text */
+  .blog-content strong {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  /* Lists */
+  .blog-content ul,
+  .blog-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+  }
+
+  .blog-content ul {
+    list-style-type: disc;
+  }
+
+  .blog-content ol {
+    list-style-type: decimal;
+  }
+
+  .blog-content li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+  }
+
+  .blog-content li::marker {
+    color: var(--accent);
+  }
+
+  /* Inline code */
+  .blog-content code:not(pre code) {
+    background-color: var(--bg-surface);
+    color: var(--accent);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid var(--border);
+  }
+
+  /* Code blocks - Dark theme with syntax highlighting */
+  .blog-content pre {
+    background-color: #1e1e1e !important;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    border: 1px solid #333;
+  }
+
+  .blog-content pre code {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-family: 'JetBrains Mono', monospace;
+    color: #d4d4d4;
+  }
+
+  /* Syntax highlighting colors */
+  .blog-content pre code .keyword,
+  .blog-content pre code .hljs-keyword {
+    color: #569cd6;
+  }
+
+  .blog-content pre code .string,
+  .blog-content pre code .hljs-string {
+    color: #ce9178;
+  }
+
+  .blog-content pre code .comment,
+  .blog-content pre code .hljs-comment {
+    color: #6a9955;
+  }
+
+  .blog-content pre code .function,
+  .blog-content pre code .hljs-function {
+    color: #dcdcaa;
+  }
+
+  .blog-content pre code .number,
+  .blog-content pre code .hljs-number {
+    color: #b5cea8;
+  }
+
+  /* Blockquotes */
+  .blog-content blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  /* Horizontal rules */
+  .blog-content hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0;
+  }
+
+  /* Images */
+  .blog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin: 2rem 0;
+  }
+
+  /* Tables */
+  .blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+  }
+
+  .blog-content th,
+  .blog-content td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    text-align: left;
+  }
+
+  .blog-content th {
+    background-color: var(--bg-surface);
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .blog-content td {
+    color: var(--text-muted);
+  }
+</style>

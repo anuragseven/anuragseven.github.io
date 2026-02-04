@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Terminal from '../components/Terminal/Terminal.astro';
+---
+
+<BaseLayout title="Home">
+  <div class="overflow-hidden">
+    <Terminal />
+  </div>
+</BaseLayout>
+
+<style>
+  /* Prevent page scroll on homepage */
+  :global(body:has(.overflow-hidden)) {
+    overflow: hidden;
+  }
+</style>

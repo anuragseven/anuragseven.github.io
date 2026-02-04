@@ -1,0 +1,32 @@
+{
+  "positions": [
+    {
+      "company": "Careervira",
+      "role": "Senior Software Engineer",
+      "duration": "Oct 2021 - Present",
+      "location": "Remote",
+      "responsibilities": [
+        "Developed e-commerce micro-service using Java, Spring Boot, PostgreSQL, and AWS SQS, boosting revenue by 25%",
+        "Migrated Elasticsearch from AWS to self-managed server with enhanced security and monitoring, reducing cost by 50%",
+        "Improved Search experience by optimizing Elasticsearch query and integrating ML User Personalization, increasing Search Relevance by 50% and reducing median response time by 25%",
+        "Deployed ML Recommendation models on Linux Server using Python, FastAPI, Celery, and Supervisor, improving model performance by 30%",
+        "Developed in-house Identity Provider with SAML 2.0, reducing authentication complexity and login time by 75% through SSO integration",
+        "Reduced Median Response Time of Legacy Web Services by 25% using optimized Redis caching and code refactoring",
+        "Led extensive Code Reviews, Unit and Integration Testing, resulting in a 30% reduction in bugs"
+      ],
+      "tech": ["Java", "Spring Boot", "Python", "FastAPI", "PostgreSQL", "Elasticsearch", "Redis", "AWS", "Azure", "SAML 2.0"]
+    },
+    {
+      "company": "Nirmitee.io",
+      "role": "Software Developer Intern",
+      "duration": "Oct 2020 - Dec 2020",
+      "location": "Remote",
+      "responsibilities": [
+        "Developed Front-end, Managed App States, and consumed JSON Restful APIs for an agri-tech marketplace app",
+        "Built a comprehensive app for delivery personnel using the Flutter framework",
+        "Implemented agile development methodologies, ensured Clean Code practices, and applied Object-Oriented Design principles"
+      ],
+      "tech": ["Flutter", "REST APIs", "JSON", "Agile", "OOP"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "skills": ["Python", "JavaScript", "SQL", "Bash"]
+    },
+    {
+      "name": "Backend & Frameworks",
+      "skills": ["FastAPI", "Node.js", "Express", "REST APIs"]
+    },
+    {
+      "name": "AI/ML & Computer Vision",
+      "skills": ["OpenCV", "Azure Cognitive Services", "Speech Recognition", "Text-to-Speech", "Azure Face API", "NumPy", "Pandas"]
+    },
+    {
+      "name": "Cloud & Azure",
+      "skills": ["Azure VMs", "Azure Blob Storage", "Azure Cosmos DB", "Azure Cognitive Services", "Docker", "CI/CD"]
+    },
+    {
+      "name": "Databases",
+      "skills": ["Cosmos DB", "PostgreSQL", "MongoDB", "Redis", "MySQL"]
+    },
+    {
+      "name": "APIs & Integration",
+      "skills": ["Facebook Graph API", "Twilio", "Azure Speech API", "REST APIs", "OAuth"]
+    },
+    {
+      "name": "Tools & Platforms",
+      "skills": ["Git", "Linux", "Docker", "PyQt5", "VS Code", "Postman"]
+    },
+    {
+      "name": "Mobile Development",
+      "skills": ["Flutter", "Cross-Platform Apps"]
+    }
+  ]
+}

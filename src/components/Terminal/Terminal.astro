@@ -1,0 +1,54 @@
+---
+import TerminalInput from './TerminalInput';
+import { getCollection } from 'astro:content';
+
+// Fetch blogs data
+const blogs = await getCollection('blog', ({ data }) => !data.draft);
+const sortedBlogs = blogs
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 5)
+  .map(blog => ({
+    title: blog.data.title,
+    slug: blog.slug,
+    date: blog.data.date.toISOString(),
+    category: blog.data.category
+  }));
+
+// Fetch patents data
+const patents = await getCollection('patents');
+const sortedPatents = patents
+  .sort((a, b) => {
+    const dateA = a.data.grantDate || a.data.filingDate;
+    const dateB = b.data.grantDate || b.data.filingDate;
+    return new Date(dateB).getTime() - new Date(dateA).getTime();
+  })
+  .slice(0, 5)
+  .map(patent => ({
+    title: patent.data.title,
+    slug: patent.slug,
+    patentNumber: patent.data.patentNumber,
+    status: patent.data.status,
+    grantDate: patent.data.grantDate?.toISOString(),
+    filingDate: patent.data.filingDate.toISOString()
+  }));
+
+// Fetch projects data
+const projects = await getCollection('projects');
+const sortedProjects = projects
+  .sort((a, b) => (b.data.featured ? 1 : 0) - (a.data.featured ? 1 : 0))
+  .slice(0, 5)
+  .map(project => ({
+    title: project.data.title,
+    slug: project.slug,
+    description: project.data.description,
+    tech: project.data.tech,
+    hasDemo: !!project.data.demo,
+    hasGithub: !!project.data.github
+  }));
+---
+
+<section class="container mx-auto px-4 py-6 h-[calc(100vh-4rem)] flex items-center justify-center">
+  <div class="max-w-4xl w-full h-full max-h-[calc(100vh-7rem)]">
+    <TerminalInput client:load blogs={sortedBlogs} patents={sortedPatents} projects={sortedProjects} />
+  </div>
+</section>

@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const patents = await getCollection('patents');
+  return patents.map((patent) => ({
+    params: { slug: patent.slug },
+    props: { patent },
+  }));
+}
+
+const { patent } = Astro.props;
+const { Content } = await patent.render();
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }).format(date);
+};
+---
+
+<BaseLayout title={patent.data.title} description={patent.data.description}>
+  <article class="container mx-auto px-4 py-16 max-w-4xl">
+    <header class="mb-12">
+      <div class="flex items-center gap-3 mb-6 text-sm text-[var(--text-muted)]">
+        <a href="/patents" class="hover:text-[var(--accent)] transition-colors">&larr; Back to Patents</a>
+      </div>
+
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight">{patent.data.title}</h1>
+        <span class="px-3 py-1 text-sm font-medium rounded uppercase shrink-0 bg-green-500/10 text-green-500">
+          {patent.data.status}
+        </span>
+      </div>
+
+      <p class="text-lg text-[var(--text-muted)] mb-8">
+        {patent.data.description}
+      </p>
+
+      <!-- Patent Details Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6 rounded-lg bg-[var(--bg-surface)] border border-[var(--border)]">
+        <div>
+          <p class="text-xs text-[var(--text-muted)] uppercase tracking-wide mb-1">Patent Number</p>
+          <p class="font-mono text-lg text-[var(--accent)]">#{patent.data.patentNumber}</p>
+        </div>
+        <div>
+          <p class="text-xs text-[var(--text-muted)] uppercase tracking-wide mb-1">Filed Date</p>
+          <p class="font-medium">{formatDate(patent.data.filingDate)}</p>
+        </div>
+        {patent.data.grantDate && (
+          <div>
+            <p class="text-xs text-[var(--text-muted)] uppercase tracking-wide mb-1">Granted Date</p>
+            <p class="font-medium">{formatDate(patent.data.grantDate)}</p>
+          </div>
+        )}
+        <div>
+          <p class="text-xs text-[var(--text-muted)] uppercase tracking-wide mb-1">Inventors</p>
+          <p class="font-medium">{patent.data.inventors.join(', ')}</p>
+        </div>
+      </div>
+
+      <!-- View Certificate Button -->
+      <div class="mt-6">
+        <a
+          href={patent.data.certificateUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] text-white rounded-lg font-medium hover:opacity-90 transition-opacity"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          View Certificate
+        </a>
+      </div>
+    </header>
+
+    <!-- Patent Content -->
+    <div class="patent-content">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style is:global>
+  .patent-content {
+    line-height: 1.8;
+    font-size: 1.125rem;
+  }
+
+  .patent-content h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .patent-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+  }
+
+  .patent-content p {
+    margin-bottom: 1.25rem;
+    color: var(--text-muted);
+  }
+
+  .patent-content ul,
+  .patent-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+  }
+
+  .patent-content ul {
+    list-style-type: disc;
+  }
+
+  .patent-content ol {
+    list-style-type: decimal;
+  }
+
+  .patent-content li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .patent-content li::marker {
+    color: var(--accent);
+  }
+
+  .patent-content strong {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .patent-content a {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+</style>

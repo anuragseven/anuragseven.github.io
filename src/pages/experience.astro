@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import experienceData from '../data/experience.json';
+---
+
+<BaseLayout title="Experience" description="My professional work history and experience">
+  <section class="container mx-auto px-4 py-16 max-w-4xl">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-12">
+      <div>
+        <h1 class="text-4xl font-bold mb-2">Experience</h1>
+        <p class="text-[var(--text-muted)]">My professional journey and work history.</p>
+      </div>
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] text-white rounded-lg hover:opacity-90 transition-opacity"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        View Resume
+      </a>
+    </div>
+
+    <div class="space-y-12">
+      {experienceData.positions.map((position, index) => (
+        <div class="relative pl-8 border-l-2 border-[var(--border)]">
+          <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[var(--accent)]"></div>
+
+          <div class="mb-2">
+            <h2 class="text-xl font-semibold">{position.role}</h2>
+            <div class="flex flex-wrap items-center gap-2 text-[var(--text-muted)]">
+              <span class="text-[var(--accent)]">{position.company}</span>
+              <span>&middot;</span>
+              <span>{position.duration}</span>
+              <span>&middot;</span>
+              <span>{position.location}</span>
+            </div>
+          </div>
+
+          <ul class="mt-4 space-y-2">
+            {position.responsibilities.map((item) => (
+              <li class="flex items-start gap-2 text-[var(--text-muted)]">
+                <span class="text-[var(--accent)] mt-1">-</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div class="flex flex-wrap gap-2 mt-4">
+            {position.tech.map((t) => (
+              <span class="px-2 py-1 text-xs rounded bg-[var(--bg-surface)] border border-[var(--border)] text-[var(--text-muted)]">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

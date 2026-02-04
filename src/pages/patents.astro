@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PatentCard from '../components/PatentCard.astro';
+import { getCollection } from 'astro:content';
+
+const patents = await getCollection('patents');
+const sortedPatents = patents.sort((a, b) =>
+  new Date(b.data.grantDate || b.data.filingDate).getTime() - new Date(a.data.grantDate || a.data.filingDate).getTime()
+);
+
+const grantedCount = patents.filter(p => p.data.status === 'granted').length;
+const pendingCount = patents.filter(p => p.data.status === 'pending').length;
+---
+
+<BaseLayout title="Patents" description="View my patents and patent applications">
+  <section class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-4">Patents</h1>
+    <p class="text-[var(--text-muted)] mb-4 max-w-2xl">
+      Innovations I've developed and patented throughout my career.
+    </p>
+
+    <div class="flex gap-4 mb-8">
+      <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-500 text-sm font-medium">
+        {grantedCount} Granted
+      </span>
+      {pendingCount > 0 && (
+        <span class="px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-sm font-medium">
+          {pendingCount} Pending
+        </span>
+      )}
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {sortedPatents.map((patent) => (
+        <PatentCard
+          title={patent.data.title}
+          patentNumber={patent.data.patentNumber}
+          status={patent.data.status}
+          filingDate={patent.data.filingDate}
+          grantDate={patent.data.grantDate}
+          description={patent.data.description}
+          certificateUrl={patent.data.certificateUrl}
+          slug={patent.slug}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

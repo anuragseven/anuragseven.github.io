@@ -1,0 +1,204 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About" description="Learn more about Anurag Tripathi - Senior Software Engineer with 4+ years of experience in backend development, cloud architecture, and AI/ML">
+  <section class="container mx-auto px-4 py-16 max-w-4xl">
+
+    <!-- Header Section -->
+    <div class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">About Me</h1>
+      <p class="text-xl text-[var(--text-muted)] mb-8 max-w-2xl">
+        Senior Software Engineer with 4+ years of experience building scalable systems, cloud-native applications, and intelligent solutions.
+      </p>
+
+      <!-- CTA Buttons at Top -->
+      <div class="flex flex-wrap gap-4">
+        <a href="/contact" class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Get in Touch
+        </a>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 border border-[var(--border)] rounded-lg font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          View Resume
+        </a>
+        <a href="/experience" class="inline-flex items-center gap-2 px-6 py-3 border border-[var(--border)] rounded-lg font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          View Experience
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="space-y-12">
+
+      <!-- Introduction -->
+      <div class="p-6 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)]">
+        <p class="text-lg leading-relaxed text-[var(--text-muted)]">
+          I'm <span class="text-[var(--text-primary)] font-medium">Anurag Tripathi</span>, a software engineer who thrives on solving complex problems and building systems that make a difference. With a B.Tech in Computer Science and over four years of hands-on experience, I've had the privilege of working across the full spectrum of software development — from designing robust backend architectures to deploying AI-powered applications in the cloud.
+        </p>
+      </div>
+
+      <!-- Areas of Expertise -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[var(--accent)]/10 flex items-center justify-center">
+            <svg class="w-4 h-4 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </span>
+          Areas of Expertise
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="p-5 rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-colors">
+            <h3 class="font-semibold mb-2">Backend Development</h3>
+            <p class="text-sm text-[var(--text-muted)]">
+              Designing and building scalable APIs, microservices, and distributed systems that handle high traffic with reliability.
+            </p>
+          </div>
+          <div class="p-5 rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-colors">
+            <h3 class="font-semibold mb-2">Cloud & DevOps</h3>
+            <p class="text-sm text-[var(--text-muted)]">
+              Architecting cloud-native solutions on Azure, implementing CI/CD pipelines, and managing containerized deployments.
+            </p>
+          </div>
+          <div class="p-5 rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-colors">
+            <h3 class="font-semibold mb-2">AI/ML & Computer Vision</h3>
+            <p class="text-sm text-[var(--text-muted)]">
+              Building intelligent applications using machine learning, computer vision, and cognitive services.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Innovation & Patents -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[var(--accent)]/10 flex items-center justify-center">
+            <svg class="w-4 h-4 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </span>
+          Innovation & Patents
+        </h2>
+
+        <p class="text-[var(--text-muted)] mb-6">
+          I believe in pushing boundaries and creating solutions that address real-world challenges. My work in assistive technology and automation has resulted in two granted patents:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <a href="/patents/virtual-scribe" class="group p-5 rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-colors">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="px-2 py-0.5 text-xs font-medium rounded bg-green-500/10 text-green-500">GRANTED</span>
+              <span class="text-xs text-[var(--text-muted)]">#577915</span>
+            </div>
+            <h3 class="font-semibold group-hover:text-[var(--accent)] transition-colors">Virtual Scribe</h3>
+            <p class="text-sm text-[var(--text-muted)] mt-1">
+              An assistive device enabling differently-abled individuals to write examinations independently through voice input.
+            </p>
+          </a>
+          <a href="/patents/land-scanner-drone" class="group p-5 rounded-lg border border-[var(--border)] hover:border-[var(--accent)] transition-colors">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="px-2 py-0.5 text-xs font-medium rounded bg-green-500/10 text-green-500">GRANTED</span>
+              <span class="text-xs text-[var(--text-muted)]">#507807</span>
+            </div>
+            <h3 class="font-semibold group-hover:text-[var(--accent)] transition-colors">Land Scanner Drone System</h3>
+            <p class="text-sm text-[var(--text-muted)] mt-1">
+              A drone-based system for accurate measurement of regular and irregular land plots using automated detection.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- My Approach -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[var(--accent)]/10 flex items-center justify-center">
+            <svg class="w-4 h-4 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+          </span>
+          My Approach
+        </h2>
+
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <div class="w-1 bg-[var(--accent)] rounded-full shrink-0"></div>
+            <div>
+              <h3 class="font-semibold mb-1">Clean, Maintainable Code</h3>
+              <p class="text-[var(--text-muted)]">
+                I write code with the next developer in mind. Every function, every module is designed to be readable, testable, and easy to extend.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-1 bg-[var(--accent)] rounded-full shrink-0"></div>
+            <div>
+              <h3 class="font-semibold mb-1">Pragmatic Problem Solving</h3>
+              <p class="text-[var(--text-muted)]">
+                I focus on solutions that work, not over-engineered architectures. The best code is often the simplest code that solves the problem effectively.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-1 bg-[var(--accent)] rounded-full shrink-0"></div>
+            <div>
+              <h3 class="font-semibold mb-1">Continuous Learning</h3>
+              <p class="text-[var(--text-muted)]">
+                Technology evolves rapidly, and so do I. I'm constantly exploring new tools, frameworks, and methodologies to stay at the cutting edge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What Drives Me -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[var(--accent)]/10 flex items-center justify-center">
+            <svg class="w-4 h-4 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          What Drives Me
+        </h2>
+
+        <p class="text-[var(--text-muted)] leading-relaxed">
+          Beyond writing code, I'm passionate about creating technology that has a meaningful impact. Whether it's building an assistive device that gives independence to someone who needs it, or automating tedious processes so people can focus on what matters — I find fulfillment in knowing that my work makes a difference. I enjoy the entire journey: from understanding a problem deeply, to architecting a solution, to seeing it work in the real world.
+        </p>
+      </div>
+
+      <!-- Tech Stack Quick View -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[var(--accent)]/10 flex items-center justify-center">
+            <svg class="w-4 h-4 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
+            </svg>
+          </span>
+          Tech I Work With
+        </h2>
+
+        <div class="flex flex-wrap gap-2">
+          {['Python', 'JavaScript', 'FastAPI', 'Azure', 'OpenCV', 'Docker', 'Cosmos DB', 'PostgreSQL', 'Flutter', 'REST APIs', 'Speech Recognition'].map((tech) => (
+            <span class="px-3 py-1.5 text-sm rounded-full bg-[var(--bg-surface)] border border-[var(--border)] text-[var(--text-muted)]">
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <p class="mt-4 text-sm text-[var(--text-muted)]">
+          <a href="/skills" class="text-[var(--accent)] hover:underline">View complete skill set →</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

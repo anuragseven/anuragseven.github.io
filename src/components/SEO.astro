@@ -1,0 +1,52 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: string;
+}
+
+const {
+  title,
+  description = "Software Engineer with 4+ years of backend experience",
+  image = "/og-image.png",
+  type = "website"
+} = Astro.props;
+
+const siteUrl = import.meta.env.PUBLIC_SITE_URL || "https://anuragtripathi.com";
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const fullTitle = title === "Home" ? "Anurag Tripathi | Software Engineer" : `${title} | Anurag Tripathi`;
+---
+
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="title" content={fullTitle} />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, siteUrl).href} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalUrl} />
+<meta property="twitter:title" content={fullTitle} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, siteUrl).href} />
+
+<!-- JSON-LD -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Anurag Tripathi",
+  "url": siteUrl,
+  "jobTitle": "Software Engineer",
+  "sameAs": [
+    "https://github.com/anuragseven",
+    "https://www.linkedin.com/in/anuragtripathi7"
+  ]
+})} />

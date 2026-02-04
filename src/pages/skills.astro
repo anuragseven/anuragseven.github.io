@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import skillsData from '../data/skills.json';
+---
+
+<BaseLayout title="Skills" description="My technical skills and expertise">
+  <section class="container mx-auto px-4 py-16 max-w-4xl">
+    <h1 class="text-4xl font-bold mb-4">Technical Skills</h1>
+    <p class="text-[var(--text-muted)] mb-12 max-w-2xl">
+      Technologies and tools I work with on a daily basis.
+    </p>
+
+    <div class="space-y-10">
+      {skillsData.categories.map((category) => (
+        <div>
+          <h2 class="text-xl font-semibold mb-4 text-[var(--accent)]">{category.name}</h2>
+          <div class="flex flex-wrap gap-3">
+            {category.skills.map((skill) => (
+              <span class="px-4 py-2 rounded-lg bg-[var(--bg-surface)] border border-[var(--border)] text-sm">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
